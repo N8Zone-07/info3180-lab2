@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="grp">
+<h1>Group Members</h1>
+
+{% for key, val in curr.items() %}
+   <div id="mbr">
+    <h1>{{key}} {{val }}</h1>
+   </div>
+    
+{% endfor %}
+
+</div>
+
+{% endblock %}

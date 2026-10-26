@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="idblock">
+    <img src="{{ url_for('static', filename='image.png') }}">
+    <h1>Mary Jane</h1>
+    <h2>@mjane</h2>
+    
+    <p>{{date}}</p>
+</div>
+<div id="pgraph">
+    <p id="binfo">
+        I am smart and talented young woman who loves website
+        design and development. Contact me if you'd like to work together on a new project.
+    </p>
+    <div class="stats-container">
+        <div class="stat-item">
+            <p class="stat-value">7</p>
+            <p class="stat-label">Posts</p>
+        </div>
+        <div class="stat-item">
+            <p class="stat-value">100</p>
+            <p class="stat-label">Following</p>
+        </div>
+        <div class="stat-item">
+            <p class="stat-value">250</p>
+            <p class="stat-label">Followers</p>
+        </div>
+    </div>
+
+    <!-- Follow Button -->
+    <button class="follow-btn">Follow</button>
+</div>
+{% endblock %}
